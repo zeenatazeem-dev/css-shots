@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        h1{
+            margin: 10px;
+            padding: 50px;
+            display: flex;
+            align-items:center;
+            justify-content: center;  
+            color: brown;
+        }
+        div{
+            padding: 50px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background-color: aquamarine;
+            color: brown;
+        }
+        #input{
+            width: 200px;
+            align-items:center;
+            justify-content:center ;
+            border-radius: 25px;
+            border:5px solid brown ;
+            background-color: aquamarine;
+            color: brown;
+}
+button{
+    align-items:center;
+    justify-content:center ;
+    border:5px solid brown ;
+    background-color: aquamarine;
+        }
+    </style>
+</head>
+<body> 
+    <h1>SPEAKER</h1>
+    <div>
+        
+        <input id="input">
+        <button onclick="speak()">Speak</button>
+    </div>
+    <script>
+        function speak() {
+            var text = document.getElementById("input").value;
+            var utterance = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .h{
+            text-align: center;
+            background-color: #17474f;
+        }
+   .container{
+    display: grid;
+    place-items: center;
+    min-height: 400px;
+}
+.sticky-stack{
+    background: #17474f;
+    color: afff;
+    margin: 0px;
+    height: 400px;
+    border-radius: 1rem;
+    overflow-y: auto;
+}
+.sticky-stack dt{
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+    background: #263226;
+    color:#cfdbdc ;
+    padding: 0.25rem 1rem;
+}
+sticky-stack dd{
+    margin: 0;
+    padding: 0.75rem 1rem;
+}
+sticky-stack dd + dt{
+    margin-top: 1rem;
+}
+    </style>
+</head>
+<body>
+    <h1 class="h">List Of Distructs In Balochistan</h1>
+    <main>
+        <div class="container">
+            <dl class="sticky-stack">
+                <dt>A</dt>
+              <dd>Awaran</dd>
+
+              <dt>B</dt>
+              <dd>Barkhan</dd>
+              
+              <dt>C</dt>
+              <dd>Chaghi</dd>
+              <dd>Chaman</dd>
+              
+              <dt>D</dt>
+              <dd>Dera Bugti</dd>
+              <dd>Duki</dd>
+              
+              <dt>G</dt>
+              <dd>Gawader</dd>
+              
+              <dt>H</dt>
+              <dd>Hurnai</dd>
+              <dd>Hub</dd> 
+              
+              <dt>J</dt>
+              <dd>Jafar Abad</dd>
+              <dd>Jhal Magsi</dd>
+              
+              <dt>K</dt>
+              <dd>Kachi</dd>
+              <dd>Kalat</dd>
+              <dd>Kech</dd>
+              <dd>Kharan</dd>
+              <dd>Kohlu</dd>
+              <dd>Khuzdar</dd>
+              
+              <dt>L</dt>
+              <dd>Lasbela</dd>
+              <dd>Loarlai</dd>
+              
+              <dt>M</dt>
+              <dd>Mastung</dd>
+              <dd>Musakhel</dd>
+              
+              <dt>N</dt>
+              <dd>Nasirabad</dd>
+              <dd>Nuskhi</dd>
+              
+              <dt>P</dt>
+              <dd>Punjgur</dd>
+              <dd>Pishin</dd>
+              
+              <dt>Q</dt>
+              <dd>Qila Abdullah</dd>
+              <dd>Qila Saifullah</dd>
+              <dd>Quetta</dd>
+              
+              <dt>S</dt>
+              <dd>Sherani</dd>
+              <dd>Sibi</dd>
+              <dd>Sohbatpur</dd>
+              <dd>Surab</dd>
+              
+              <dt>W</dt>
+              <dd>Washuk</dd>
+              
+              <dt>Z</dt>
+              <dd>Zhob</dd>
+              <dd>Ziarat</dd>
+             
+            </dl>
+        </div>
+       
+    </main>
+</body>
+</html>
